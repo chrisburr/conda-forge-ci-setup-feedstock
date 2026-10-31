@@ -1,0 +1,4 @@
+metal_compiler_version:
+- '26'
+target_platform:
+- osx-arm64

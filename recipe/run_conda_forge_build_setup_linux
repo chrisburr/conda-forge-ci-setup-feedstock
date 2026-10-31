@@ -100,6 +100,7 @@ if [ -f ${CI_SUPPORT}/${CONFIG}.yaml ]; then
     if [[ "${tgt}" == osx-* || "${cross_tgt}" == osx-* ]]; then
         OSX_SDK_DIR=$(mktemp -d)
         source ${SCRIPT_DIR}/download_osx_sdk.sh
+        source ${SCRIPT_DIR}/setup_metal_toolchain.sh
     fi
 fi
 
